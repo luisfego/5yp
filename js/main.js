@@ -56,6 +56,7 @@ var firms_data = {firms: [{"Score":9.258,"Firm":"McKinsey & Company","logo":"img
 $(document).ready(function() {
   $('#bs-schools').append(template_bs(data));
   $('#cfirms').append(template_cf(firms_data));
+  Sortable.init()
 })
 
 Handlebars.registerHelper("inc", function(value, options)
