@@ -25,7 +25,8 @@ startdate = new Date();
 startdate.setDate(startdate.getDate() - 30);
 
 endDate = new Date()
-endDate.setDate(endDate.getDate() + (365*3));
+datsToAdd = document.getElementById("visualization").clientWidth; //scale for smaller devices, one day per px is a good measure.
+endDate.setDate(endDate.getDate() + daysToAdd);
 
 var options = {
   height: '250px', 
