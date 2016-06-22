@@ -23,7 +23,9 @@
 
     <!-- content -->
     <div class="container">
+      <div class="page-header">
         <h1>5 year plan</h1>
+      </div>
 
         <div id="visualization"></div>
 
@@ -32,10 +34,11 @@
             <h2>Best Business Schools 2015</h2>
 
             <script id="business-schools" type="text/x-handlebars-template">
-              <table class="table">
+            <div class="table-responsive">
+              <table class="table table-hover">
                 <thead>
                   <tr>
-                    <th>Rank</th>
+                    <th>#</th>
                     <th>School</th>
                     <th>Employer</th>
                     <th>Alumni</th>
@@ -50,7 +53,7 @@
                 <tbody>
                   {{#schools}}
                   <tr class="row-entry">
-                    <td>{{inc @index}}</td>
+                    <td><b>{{inc @index}}</b></td>
                     <td>{{School}}</td>
                     <td>{{Employer}}</td>
                     <td>{{Alumni}}</td>
@@ -63,13 +66,44 @@
                   {{/schools}}
                 </tbody>
               </table>
+            </div>
             </script>
 
           </div>
-          <div class="col-md-5">
-          <h2>Top consulting firms 2016</h2>
+          <div class="col-md-5" id="cfirms">
+            <h2>Top consulting firms 2016</h2>
+
+            <script id="consulting-firms" type="text/x-handlebars-template">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Score</th>
+                    <th>&nbsp;</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  {{#firms}}
+                  <tr class="row-entry">
+                    <td><b>{{inc @index}}</b></td>
+                    <td>{{Score}}</td>
+                    <td class="logo"><img src="{{logo}}" alt="{{firm}}" /></td>
+                  </tr>
+                  {{/firms}}
+                </tbody>
+              </table>
+            </div>
+            </script>
+
           </div>
         </div>
+
+        <footer class="footer">
+          <p class="text-muted text-center"><small>&copy; 2016. LFG. Todos los derechos reservados.</small></p>
+        </footer>
+
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

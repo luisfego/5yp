@@ -3,7 +3,10 @@
 }
 .vis-item.vis-box, .vis-item {
   border: 0;
-  text-align: center;
+}
+
+.vis-item .vis-item-overflow {
+  overflow: visible;
 }
 
 .vis-dot.diamond {
@@ -29,22 +32,20 @@
 
 /* ------ Purple --------*/
 .vis-item.purple {
-  color: #925fa3;
-  background: transparent;
+  background-color: #925fa3;
+  color: #fff;
 }
 
 .purple.diamond {
   border-color: #925fa3;
+  color: #925fa3;
+  background: transparent;
 }
 
 /* ------ Gray --------*/
 .vis-item.gray {
-  color: #ddd;
+  color: #aaa;
   background: transparent;
-}
-
-.purple.gray {
-  border-color: #ddd;
 }
 
 /* ------ Yellow --------*/
@@ -61,8 +62,12 @@
 .vis-item.blue {
   background-color: #5b9bd5;
   color: #fff;
-  border: 0;
-  text-align: center;
+}
+
+.blue.diamond {
+  border-color: #5b9bd5;
+  color: #5b9bd5;
+  background: transparent;
 }
 
 /* ------ Light blue --------*/
@@ -70,7 +75,6 @@
   background-color: #dee6f3;
   color: #5b9bd5;
   border: 0;
-  text-align: center;
 }
 
 /* ------ Key --------*/
@@ -78,14 +82,15 @@
   overflow: visible;
   background-color: transparent;
   text-align: center;
-  border: 1px solid #aaa;
+  border: 1px solid #5b9bd5;
   border-width: 0 0 1px 0;
+  color: #5b9bd5;
 }
 
 .vis-item.key:before {
   content: " ";
   height: 5px;
-  border: 1px solid #aaa;
+  border: 1px solid #5b9bd5;
   border-width: 0 1px 0 0;
   font-size: 1px;
   position: absolute;
@@ -96,12 +101,33 @@
 
 .vis-item.key:after {
   content: " ";
-  height: 8px;
-  border: 1px solid #aaa;
+  height: 25px;
+  border: 1px solid #5b9bd5;
   border-width: 0 1px;
   font-size: 1px;
   position: absolute;
-  bottom:-8px;
+  bottom:-25px;
   left: 0;
   width: 100%;
+}
+
+.logo img {
+  max-height: 100px;
+  max-width: 80%;
+}
+
+td.logo {
+  height:100px;
+  text-align: center;
+}
+
+#cfirms td {
+  vertical-align: middle;
+}
+
+footer {
+  border:1px solid #ddd;
+  border-width: 1px 0 0 0;
+  padding: 10px 0;
+  color: #ddd;
 }
