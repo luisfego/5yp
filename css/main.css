@@ -1,0 +1,107 @@
+#visualization {
+  margin-bottom: 40px;
+}
+.vis-item.vis-box, .vis-item {
+  border: 0;
+  text-align: center;
+}
+
+.vis-dot.diamond {
+  border-radius: 0;
+  transform: rotate(45deg);
+  border-width: 6px;
+}
+
+.vis-dot.circle {
+  border-width: 6px;
+  border-radius: 6px;
+}
+
+/* ------ Green --------*/
+.vis-item.green {
+  color: #61973d;
+  background: transparent;
+}
+
+.green.circle {
+  border-color: #61973d;
+}
+
+/* ------ Purple --------*/
+.vis-item.purple {
+  color: #925fa3;
+  background: transparent;
+}
+
+.purple.diamond {
+  border-color: #925fa3;
+}
+
+/* ------ Gray --------*/
+.vis-item.gray {
+  color: #ddd;
+  background: transparent;
+}
+
+.purple.gray {
+  border-color: #ddd;
+}
+
+/* ------ Yellow --------*/
+.vis-item.yellow {
+  color: #ffc000;
+  background: transparent;
+}
+
+.yellow.circle {
+  border-color: #ffc000;
+}
+
+/* ------ Blue --------*/
+.vis-item.blue {
+  background-color: #5b9bd5;
+  color: #fff;
+  border: 0;
+  text-align: center;
+}
+
+/* ------ Light blue --------*/
+.vis-item.lightblue {
+  background-color: #dee6f3;
+  color: #5b9bd5;
+  border: 0;
+  text-align: center;
+}
+
+/* ------ Key --------*/
+.vis-item.key {
+  overflow: visible;
+  background-color: transparent;
+  text-align: center;
+  border: 1px solid #aaa;
+  border-width: 0 0 1px 0;
+}
+
+.vis-item.key:before {
+  content: " ";
+  height: 5px;
+  border: 1px solid #aaa;
+  border-width: 0 1px 0 0;
+  font-size: 1px;
+  position: absolute;
+  bottom:0;
+  left: 0;
+  width: 50%;
+}
+
+.vis-item.key:after {
+  content: " ";
+  height: 8px;
+  border: 1px solid #aaa;
+  border-width: 0 1px;
+  font-size: 1px;
+  position: absolute;
+  bottom:-8px;
+  left: 0;
+  width: 100%;
+}
